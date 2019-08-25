@@ -63,7 +63,6 @@
   </dependencies>
 
   <build>
-<!--
 
     <pluginManagement>
       <plugins>
@@ -85,6 +84,7 @@
             <checkstyleFilter>tools/static-code-analysis/checkstyle/suppressions.xml</checkstyleFilter>
           </configuration>
         </plugin>
+<!--
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
@@ -95,9 +95,9 @@
             <skipIfEmpty>true</skipIfEmpty>
           </configuration>
         </plugin>
+    -->
       </plugins>
     </pluginManagement>
-    -->
 
     <plugins>
       <plugin>
