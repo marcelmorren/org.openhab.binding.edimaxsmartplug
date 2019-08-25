@@ -1,4 +1,3 @@
----
 language: java
 sudo: false
 
@@ -7,13 +6,24 @@ jdk:
 
 cache:
   directories:
-    - $HOME/.m2
+    - "$HOME/.m2"
 
 install:
-  #- cp -r src/main/feature .
-  #- ls -la . feature src/main
   - mvn clean install -DskipChecks=true -DskipTests=true
   - ls -la target/
 
 script:
   - echo "Nothing to do here for now."
+
+deploy:
+  provider: releases
+  api_key:
+    secure: bI7Za3J3WSEpufytbUMr2XLf0LHf1hr/2kpCVGCA2dg2VVdlC44tHp/a6wf8S4jqsuCr3Fc1Hn7vLrPi9cVSdod3cquGt1IO1kVrC2zdgG2J43WZK9UcQ6QPYkwm++aFxyeyrdFlL92sk8M7gWoG0/YDUyrtaIAzwVkvmQvmCrqkODHDTtRuvaGdewfiXXr5zRZg2JHKHbRMoNF4mvpUhVmWcoh3WiXkfkwZ+LqjDKaglk61DmB2JDAlNXJ7juEf4UiIWW5VA6Kn4MQdck7hIpZRxl6RVJQzBWU2UuKLDnMIaefiKOiVLLOJd4iU8uG8g7l35DayVkL8PenkOJDD6zMDjJnhYAiGODoYiLiSHqyqkdlsYY/Yw9DnnAW91E1ajfLRDcWKIyj7BHp4W9UwDB792XEtLs+FVXBcuqDoxB/3xgWaUDp51/tijFTjzkUuASDwi9mOVeS5HH07M4oNQIjCuDVOhQRys/oECr1J87Oue2CK+C6EuodYwt3PPjoTo2drnuDMpLZ8A/UYVO+7kN4jbpDpcqcnW13V43bjyuX2YXtxpYhFbjh6AWdxsnoXFaN+tcZ6PsD3pMf2BWfTyi5ktlAEeOwCBfucg1cxXhJFFRm44d85GIUP8R+eLuZ5KMIaQ+YsqLyU7Xu54hnGveadlEIT0bSLE9h7vPsqqKE=
+  file:
+    - target/org.openhab.binding.edimaxsmartplug-2.5.0-SNAPSHOT.jar
+    - target/org.openhab.binding.edimaxsmartplug-2.5.0-SNAPSHOT-sources.jar
+  skip_cleanup: true
+  on:
+    repo: michz/org.openhab.binding.edimaxsmartplug
+    tags: true
+  draft: true
