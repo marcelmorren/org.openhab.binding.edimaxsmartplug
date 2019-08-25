@@ -25,7 +25,7 @@
           <plugin>
             <groupId>org.openhab.tools.sat</groupId>
             <artifactId>sat-plugin</artifactId>
-            <version>{sat.version}</version>
+            <version>0.6.1</version>
             <configuration>
               <checkstyleProperties>tools/checkstyle.properties</checkstyleProperties>
             </configuration>
