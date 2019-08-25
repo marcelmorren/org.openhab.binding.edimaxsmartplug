@@ -147,7 +147,8 @@ public abstract class AbstractCommand<T extends Object> {
                 try {
                     return (T) format.parse(result);
                 } catch (ParseException e) {
-                    e.printStackTrace();
+                    //e.printStackTrace();
+                    LOGGER.error(e.toString());
                 }
             } else if (tempClass == Boolean.class) {
                 if ("ON".equals(result)) {
@@ -203,13 +204,17 @@ public abstract class AbstractCommand<T extends Object> {
             String result = extractValueFromXML(aResponse, getXPathString());
             return unmarshal(result);
         } catch (XPathExpressionException ex) {
-            ex.printStackTrace();
+            //ex.printStackTrace();
+            LOGGER.error(ex.toString());
         } catch (ParserConfigurationException ex) {
-            ex.printStackTrace();
+            //ex.printStackTrace();
+            LOGGER.error(ex.toString());
         } catch (SAXException ex) {
-            ex.printStackTrace();
+            //ex.printStackTrace();
+            LOGGER.error(ex.toString());
         } catch (IOException ex) {
-            ex.printStackTrace();
+            //ex.printStackTrace();
+            LOGGER.error(ex.toString());
         }
 
         return null;
