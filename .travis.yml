@@ -10,7 +10,6 @@ cache:
 
 install:
   - mvn clean install -DskipChecks=true -DskipTests=true
-  - ls -la target/
 
 script:
   - echo "Nothing to do here for now."
@@ -26,4 +25,3 @@ deploy:
   on:
     repo: michz/org.openhab.binding.edimaxsmartplug
     tags: true
-  draft: true
