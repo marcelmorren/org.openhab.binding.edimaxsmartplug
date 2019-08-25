@@ -18,7 +18,7 @@ before_install:
   - tar xzf master.tar.gz
   - ls -la .
   - ls -la openhab2-addons-master
-  - mkdir openhab2-addons-master/addons/binding/org.openhab.binding.edimaxsmartplug
+  - mkdir openhab2-addons-master/bundles/org.openhab.binding.edimaxsmartplug
   - shopt -s extglob dotglob
-  - mv !(openhab2-addons-master) openhab2-addons-master/addons/binding/org.openhab.binding.edimaxsmartplug
-  - cd openhab2-addons-master/addons/binding/org.openhab.binding.edimaxsmartplug
+  - mv !(openhab2-addons-master) openhab2-addons-master/bundles/org.openhab.binding.edimaxsmartplug
+  - cd openhab2-addons-master/bundles/org.openhab.binding.edimaxsmartplug
