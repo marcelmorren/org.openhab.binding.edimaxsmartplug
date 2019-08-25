@@ -10,7 +10,10 @@ cache:
     - $HOME/.m2
 
 install:
-  - cp -r src/main/feature .
-  - ls -la . feature src/main
+  #- cp -r src/main/feature .
+  #- ls -la . feature src/main
   - mvn clean install -DskipChecks=true -DskipTests=true
   - ls -la target/
+
+script:
+  - echo "Nothing to do here for now."
