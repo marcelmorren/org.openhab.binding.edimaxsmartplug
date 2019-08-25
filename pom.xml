@@ -20,11 +20,10 @@
   <name>openHAB Add-ons :: Bundles :: Edimax Smart Plug Binding</name>
 
 
-<!--
   <properties>
     <report.fail.on.error>false</report.fail.on.error>
   </properties>
--->
+
 
 
 <!--
@@ -84,7 +83,6 @@
             <checkstyleFilter>tools/static-code-analysis/checkstyle/suppressions.xml</checkstyleFilter>
           </configuration>
         </plugin>
-<!--
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
@@ -95,7 +93,6 @@
             <skipIfEmpty>true</skipIfEmpty>
           </configuration>
         </plugin>
-    -->
       </plugins>
     </pluginManagement>
 
