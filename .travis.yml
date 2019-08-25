@@ -9,17 +9,6 @@ cache:
   directories:
     - $HOME/.m2
 
-#  - ls -la target/
-
-before_install:
-  - wget https://github.com/openhab/openhab2-addons/archive/master.tar.gz
-  - tar xzf master.tar.gz
-  - ls -la .
-  - ls -la openhab2-addons-master
-  - mkdir openhab2-addons-master/bundles/org.openhab.binding.edimaxsmartplug
-  - shopt -s extglob dotglob
-  - mv !(openhab2-addons-master) openhab2-addons-master/bundles/org.openhab.binding.edimaxsmartplug
-  - cd openhab2-addons-master/bundles/org.openhab.binding.edimaxsmartplug
-
 install:
   - mvn clean install -DskipChecks=true -DskipTests=true
+  - ls -la target/
