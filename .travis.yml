@@ -5,12 +5,10 @@ sudo: false
 jdk:
   - openjdk8
 
-#cache:
-#  directories:
-#    - $HOME/.m2
-#
-#script:
-#  - mvn clean install -DskipChecks=true -DskipTests=true
+cache:
+  directories:
+    - $HOME/.m2
+
 #  - ls -la target/
 
 before_install:
@@ -22,3 +20,6 @@ before_install:
   - shopt -s extglob dotglob
   - mv !(openhab2-addons-master) openhab2-addons-master/bundles/org.openhab.binding.edimaxsmartplug
   - cd openhab2-addons-master/bundles/org.openhab.binding.edimaxsmartplug
+
+script:
+  - mvn clean install -DskipChecks=true -DskipTests=true
