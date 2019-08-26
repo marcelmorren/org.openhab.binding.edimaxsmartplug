@@ -13,6 +13,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
 import org.eclipse.jdt.annotation.NonNullByDefault;
+import org.eclipse.jdt.annotation.Nullable;
 import org.eclipse.smarthome.core.library.types.OnOffType;
 import org.eclipse.smarthome.core.thing.ChannelUID;
 import org.eclipse.smarthome.core.thing.Thing;
@@ -46,8 +47,10 @@ public class EdimaxSmartPlugHandler extends BaseThingHandler {
     /**
      * Connection Information to the device.
      */
+    @Nullable
     protected ConnectionInformation ci = null;
 
+    @Nullable
     private ScheduledFuture<?> pollingJob = null;
 
     /**
