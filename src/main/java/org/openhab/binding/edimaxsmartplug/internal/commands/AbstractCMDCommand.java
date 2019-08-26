@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Base class for Commands of type CMD.
  *
- * @author Heinz
+ * @author Heinz - Initial contribution
  *
  * @param <T>
  */

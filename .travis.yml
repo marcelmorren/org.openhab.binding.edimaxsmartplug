@@ -9,7 +9,8 @@ cache:
     - "$HOME/.m2"
 
 install:
-  - mvn clean install -DskipChecks=true -DskipTests=true
+  - mvn clean install -DskipTests=true
+#  - mvn clean install -DskipChecks=true -DskipTests=true
 
 script:
   - echo "Nothing to do here for now."
