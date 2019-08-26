@@ -8,6 +8,7 @@
  */
 package org.openhab.binding.edimaxsmartplug.handler;
 
+import org.eclipse.jdt.annotation.NonNullByDefault;
 import org.eclipse.smarthome.core.thing.Thing;
 
 /**
@@ -17,6 +18,7 @@ import org.eclipse.smarthome.core.thing.Thing;
  *
  * @author Falk Harnisch - Initial contribution
  */
+@NonNullByDefault
 public class Edimax1101Handler extends EdimaxSmartPlugHandler {
 
     /**

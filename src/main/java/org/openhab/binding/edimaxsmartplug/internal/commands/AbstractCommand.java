@@ -51,7 +51,8 @@ import org.slf4j.LoggerFactory;
 /**
  * Base class for commands.
  *
- * @author Heinz
+ * @author Heinz - Initial contribution
+ * @author Michael Zapf - Adjustments for Digest authentication
  *
  * @param <T>
  */

@@ -9,12 +9,14 @@
 package org.openhab.binding.edimaxsmartplug.configuration;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
+import org.eclipse.jdt.annotation.NonNullByDefault;
 
 /**
  * Holds the configuration for the thing.
  *
  * @author Falk Harnisch - Initial contribution
  */
+@NonNullByDefault
 public class EdimaxSmartPlugConfiguration {
 
     private String ipAddress;

@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
+import org.eclipse.jdt.annotation.NonNullByDefault;
 import org.eclipse.smarthome.core.library.types.OnOffType;
 import org.eclipse.smarthome.core.thing.ChannelUID;
 import org.eclipse.smarthome.core.thing.Thing;
@@ -35,6 +36,7 @@ import org.slf4j.LoggerFactory;
  * @author Falk Harnisch - Initial contribution
  * @author Michael Zapf - Adjustments for Digest auth
  */
+@NonNullByDefault
 public class EdimaxSmartPlugHandler extends BaseThingHandler {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(EdimaxSmartPlugHandler.class);

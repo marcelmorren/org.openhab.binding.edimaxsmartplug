@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Command to retrieve the power consumption in Watt.
  *
- * @author Heinz
+ * @author Heinz - Initial contribution
  */
 public class GetPower extends AbstractCMDNowPowerCommand<BigDecimal> {
 

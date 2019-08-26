@@ -13,6 +13,7 @@ import java.math.BigDecimal;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
+import org.eclipse.jdt.annotation.NonNullByDefault;
 import org.eclipse.smarthome.core.library.types.DecimalType;
 import org.eclipse.smarthome.core.thing.ChannelUID;
 import org.eclipse.smarthome.core.thing.Thing;
@@ -32,6 +33,7 @@ import org.slf4j.LoggerFactory;
  *
  * @author Falk Harnisch - Initial contribution
  */
+@NonNullByDefault
 public class Edimax2101Handler extends EdimaxSmartPlugHandler {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Edimax2101Handler.class);

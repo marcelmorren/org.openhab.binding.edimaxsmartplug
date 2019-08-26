@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Command to retrieve the state.
  *
- * @author Heinz
+ * @author Heinz - Initial contribution
  */
 public class GetState extends AbstractCMDCommand<Boolean> {
 

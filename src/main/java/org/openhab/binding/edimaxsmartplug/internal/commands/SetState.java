@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Command to set the devices state.
  *
- * @author Heinz
+ * @author Heinz - Initial contribution
  *
  */
 public class SetState extends AbstractCMDCommand<Boolean> {

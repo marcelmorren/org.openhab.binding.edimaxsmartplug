@@ -11,8 +11,8 @@ package org.openhab.binding.edimaxsmartplug.internal;
 /**
  * Information about a connect.
  *
- * @author Heinz
- * @author Michael Zapf
+ * @author Heinz - Initial contribution
+ * @author Michael Zapf - Parameter renaming for better understandability
  *
  */
 public class ConnectionInformation {
