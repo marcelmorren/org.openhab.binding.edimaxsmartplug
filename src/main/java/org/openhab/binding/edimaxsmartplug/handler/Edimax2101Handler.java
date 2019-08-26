@@ -14,6 +14,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
 import org.eclipse.jdt.annotation.NonNullByDefault;
+import org.eclipse.jdt.annotation.Nullable;
 import org.eclipse.smarthome.core.library.types.DecimalType;
 import org.eclipse.smarthome.core.thing.ChannelUID;
 import org.eclipse.smarthome.core.thing.Thing;
@@ -38,7 +39,8 @@ public class Edimax2101Handler extends EdimaxSmartPlugHandler {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Edimax2101Handler.class);
 
-    private ScheduledFuture<?> pollingJob;
+    @Nullable
+    private ScheduledFuture<?> pollingJob = null;
 
     /**
      * Constructor the only calls the super constructor.

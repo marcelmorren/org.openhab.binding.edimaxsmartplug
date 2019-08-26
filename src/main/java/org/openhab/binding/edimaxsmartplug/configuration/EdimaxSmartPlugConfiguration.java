@@ -20,7 +20,7 @@ import org.eclipse.jdt.annotation.NonNullByDefault;
 @NonNullByDefault
 public class EdimaxSmartPlugConfiguration {
 
-    private String ipAddress;
+    private String ipAddress = "";
     private String username = "";
     private String password = "";
 
