@@ -46,9 +46,9 @@ public class EdimaxSmartPlugHandler extends BaseThingHandler {
     /**
      * Connection Information to the device.
      */
-    protected ConnectionInformation ci;
+    protected ConnectionInformation ci = null;
 
-    private ScheduledFuture<?> pollingJob;
+    private ScheduledFuture<?> pollingJob = null;
 
     /**
      * Constructor for the edimax things.
@@ -101,7 +101,9 @@ public class EdimaxSmartPlugHandler extends BaseThingHandler {
 
     @Override
     public void dispose() {
-        pollingJob.cancel(true);
+        if (pollingJob != null) {
+            pollingJob.cancel(true);
+        }
     }
 
     /**

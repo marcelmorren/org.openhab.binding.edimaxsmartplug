@@ -15,13 +15,14 @@ import org.eclipse.jdt.annotation.NonNullByDefault;
  * Holds the configuration for the thing.
  *
  * @author Falk Harnisch - Initial contribution
+ * @author Michael Zapf - Some codestyle improvements and stabilization
  */
 @NonNullByDefault
 public class EdimaxSmartPlugConfiguration {
 
     private String ipAddress;
-    private String username;
-    private String password;
+    private String username = "";
+    private String password = "";
 
     /**
      * Returns the IP address of the thing.
